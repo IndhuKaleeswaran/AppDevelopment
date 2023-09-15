@@ -1,0 +1,56 @@
+
+.body1{
+    background-size: cover;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    font-size:large;
+    text-align: center;
+  }
+.login
+{
+        background-color:rgba(97, 8, 241, 0.134);
+        border:none;
+        color: black;
+        padding-right: 3px;
+        padding-left: 3px;
+        font-size: 20px;
+}
+.f1{
+    position:fixed;
+    top: 180px;
+    left: 550px;
+    background-color: rgba(249, 239, 243, 0.451);
+    height: 400px;
+    width: 400px;
+}
+
+input[type=password],[type=name]
+{
+    width:50%;
+    padding: 6px 22px;
+    border-radius: 10px;
+    margin-left: 40px;
+    box-sizing: border-box;
+    border:2px solid black;
+    
+}
+.but
+{
+    width:30%;
+    padding: 6px 22px;
+    border-radius: 10px;
+    margin-left: 40px;
+    box-sizing: border-box;
+    border:2px solid #8aa6e0;
+    text-size-adjust: 20px;
+}
+.new 
+{
+    width:30%;
+    padding: 6px 22px;
+    border-radius: 10px;
+    margin-left: 40px;
+    box-sizing: border-box;
+    border:2px solid #8aa6e0;
+    text-size-adjust: 20px;
+}

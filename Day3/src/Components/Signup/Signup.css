@@ -1,0 +1,38 @@
+.sign
+{
+        background-color: grey;
+        border:none;
+        color: black;
+        padding:8px 36px;
+        font-size: 20px;
+}
+.img{
+    position: absolute;
+
+}
+.form1
+{
+    position: absolute;
+    left: 523px;
+    top:72px;
+    background-color: rgba(255, 255, 255, 0.481);
+    height: 600px;
+
+}
+.body4{
+    background-size: cover;
+    background: no-repeat;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    font-size:large;
+    text-align: center;
+  
+}
+input[type=text]
+{
+    width:40%;
+    padding: 6px 22px;
+    border-radius: 10px;
+    margin-left: 60px;
+    box-sizing: border-box;
+}
