@@ -1,0 +1,776 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sacramento&family=Satisfy&display=swap');
+ *{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: no-repeat url('https://www.nbc.com/generetic/images/nbc-background.png');
+    background-size: cover;
+    height: 5vh;
+    width: 98vw;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+
+.home-head
+{
+    font-size: 200px;
+    text-align: center;
+    padding-top: 180px;
+    padding-right: 100px;
+    font-family: 'Sacramento', cursive;
+    color: #fff;
+  text-shadow:
+    0 0 7px #ddd,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
+  
+}
+.btn1{
+    font-size:60px;
+    margin-left: 570px;
+    padding-top: 30px;
+    font-family: 'Sacramento', cursive;
+    font-weight: bold;
+    
+
+}
+
+.gender-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(142, 55, 180);
+    bottom: 300px;
+    align-content: center;
+    justify-content: center;
+    margin-top: 85px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+  
+  .form-g {
+    margin-bottom: 20px;
+    
+  }
+  
+  .gender-head{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: lightskyblue;
+
+  }
+  .main-label {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    margin-bottom: 5px;
+    font-size:larger;
+    
+  }
+  
+  .sub-label {
+    margin-right: 5px;
+    padding-left: 20px;
+  }
+  
+  .age-select {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .btn-age {
+    background-color: lightskyblue;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+  
+  .btn-age:hover {
+    background-color: #5d8add;
+}
+
+.error-message{
+    color: red;
+    text-align: center;
+}
+  
+
+.topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    height: 8%;
+    width: 90%;
+    background-color: lightskyblue;
+    align-items: center;
+    box-shadow:
+        0px 8px 18px rgba(0, 0, 0, 0.07);
+}
+
+.main-wrapper1{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    /* padding: 1rem; */
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.contact-field{
+    gap: 1rem;
+    height: 200px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ddc5da;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding-left: 90px;
+}
+
+.user {
+    position: absolute;
+    right: 1%;
+}
+.username-color{
+    color: #000;
+}
+
+
+.left-bar {
+    background-color: rgb(200, 3, 196);
+    color: #000000;
+    height: 100%;
+    position: fixed;
+    width: 10%;
+    left: 0;
+    top: 0;
+    box-shadow:
+        16px 2px 28px rgba(0, 0, 0, 0.07);
+}
+
+.left-bar-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.left-bar-button {
+    border: none;
+    background-color: lightskyblue;
+    color: rgb(200, 3, 196);
+    border-left: 4px solid rgb(150, 54, 137);
+    border-right: 2px solid #fff;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.left-bar-button-logout {
+    border: none;
+    border-left: 4px solid #ff0000;
+    border-right: 2px solid #fff;
+    background-color: #eae0e8;
+    color: #ff0000;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.nav-btn {
+    padding: 1rem;
+    width: 90%;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: .4s ease-in;
+    box-shadow:
+        0.2px 0.2px 1.6px -2px rgba(0, 0, 0, 0.036),
+        0.2px 0.2px 2.4px -2px rgba(0, 0, 0, 0.053),
+        0.3px 0.3px 3px -2px rgba(0, 0, 0, 0.065),
+        0.4px 0.4px 3.4px -2px rgba(0, 0, 0, 0.075),
+        0.4px 0.4px 3.7px -2px rgba(0, 0, 0, 0.085),
+        0.5px 0.5px 4px -2px rgba(0, 0, 0, 0.095),
+        0.5px 0.5px 4.4px -2px rgba(0, 0, 0, 0.105),
+        0.6px 0.6px 4.9px -2px rgba(0, 0, 0, 0.117),
+        0.7px 0.7px 5.7px -2px rgba(0, 0, 0, 0.134),
+        1px 1px 8px -2px rgba(0, 0, 0, 0.17);
+}
+
+.left-bar-button:hover {
+    border-right: 0px;
+    border-left: 6px solid rgb(150, 54, 137);
+    background-color: rgb(150, 54, 137);
+    color: #fff;
+}
+
+.left-bar-button-logout:hover {
+    border-right: 0px;
+    border-left: 6px solid rgb(255, 29, 29);
+    background-color: #af0101;
+    color: #ffffff;
+}
+
+.main-wrapper {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    /* padding: 1rem; */
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-container {
+    padding: 3rem;
+    background-color: #ddc5da;
+    color: rgb(150, 54, 137);
+    border-radius: 10px;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.auth-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    padding-top: 30px;
+}
+
+.auth-heading {
+    color: lightskyblue;
+
+    text-align: center;
+    
+}
+
+.auth-form {
+    gap: 1rem;
+    height: 500px;
+    width: 30vw;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(142, 55, 180);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.auth-field {
+    width: 60%;
+    padding: 1rem;
+    color: #000;
+    background-color: #fddddd;
+    border: 1px solid grey;
+
+}
+
+.auth-field:focus {
+    outline: 1px solid rgb(150, 54, 137)
+}
+
+.auth-btn {
+    padding: 1rem;
+    color: black;
+    background-color: lightskyblue;
+    border: none;
+    font-weight: bold;
+}
+.app-x-shadow{
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.auth-links{
+    text-align: center;
+    margin: 2rem;
+    font-size:x-large;
+}
+
+.auth-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration:none;
+    color: #fff;
+}
+
+.bill-container {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+  }
+  
+  .billform {
+    text-align: center;
+  }
+  
+  .billhead {
+    background-color: #9f0686;
+    color: white;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .billhead h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  
+  
+  
+  select,.invoice {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+.abc
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-color: #fffafa;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    background-color: #cb9999;
+}
+.button1
+{
+    border-radius: 10px;
+    background-color: #9f0686;
+    width: 100px;
+    height: 42px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 39px;
+    color: #fefafa;
+    left: 100px;
+    margin-left: -240px;
+    margin-right: 1px;
+    margin-left: 1px;
+    
+}
+.button2
+{
+    position: absolute;
+    border-radius: 10px;
+    background: #0e0d0d;
+    width: 100px;
+    height: 42px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 39px;
+    color: #fefafa;
+    left: 100px;
+}
+
+.beginners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+    margin-left: 200px;
+    max-width: 1200px; 
+    font-size: 20px;
+  }
+  
+  .beginner1,
+  .beginner2,
+  .beginner3 {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px;
+  }
+  
+.weight-loss {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 190px;
+    max-width: 1200px; 
+    font-size: 20px;
+  }
+  
+  .wt1,
+  .wt2,
+  .wt3 {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+  
+.stress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 180px;
+    max-width: 1200px; 
+    font-size: 20px;
+  }
+  
+  .stress1,
+  .stress2,
+  .stress3 {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+  
+  
+  .live-head{
+    padding-top: 150px;
+    padding-left: 200px;
+    font-size: 40px;
+  }
+
+  .eve-container{
+    color: #fff;
+  }
+
+  .eve1{
+    position: absolute;
+    text-align: center;
+    background-color: rgb(142, 55, 180);
+    margin-top: 100px;
+    margin-left: 300px;
+    padding: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-right: 900px;
+    font-size: 20px;
+    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .eve2{
+    position: absolute;
+    text-align: center;
+    background-color: rgb(142, 55, 180);
+    margin-top: 100px;
+    margin-left: 700px;
+    padding: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-right: 500px;
+    font-size: 20px;
+    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .eve3{
+    position: absolute;
+    text-align: center;
+    background-color: rgb(142, 55, 180);
+    margin-top: 100px;
+    margin-left: 1100px;
+    padding: 50px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    margin-right:150px;
+    font-size: 20px;
+    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .hello-container{
+    margin-top: 120px;
+    margin-left: 300px;
+    margin-right: 500px;
+    background-color: #fff;
+    color: #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border: 10px solid lightskyblue;
+    border-radius: 5px;
+  }
+
+  .bar-container{
+    background-color: beige;
+    margin-top: 40px;
+    margin-left: 300px;
+    margin-right: 600px;
+    padding-left: 50px;
+    padding-top: 30px;
+    border: 5px solid lightskyblue;
+    border-radius: 5px;
+    color: #000;
+    text-align: center;
+  }
+
+  .dash{
+    margin-bottom: -700px;
+  }
+ 
+.privacy-policy-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(142, 55, 180);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 80px;
+    margin-left: 300px;
+    padding-bottom: 40px
+}
+
+.privacy-policy-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.privacy-policy-container h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.privacy-policy-container p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.privacy-policy-container ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+
+.terms-and-conditions-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(142, 55, 180);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: 300px;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.terms-and-conditions-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.terms-and-conditions-container h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.terms-and-conditions-container p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.terms-and-conditions-container ol {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.back-btn1{
+    margin-top: 5px;
+    margin-left: 1400px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+.back-btn2{
+    margin-top: -5px;
+    margin-bottom: 50px;
+    margin-left: 1400px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+.back-btn3{
+    margin-top: -5px;
+    margin-bottom: 50px;
+    margin-left: 1200px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.rec{
+    margin-bottom: -700px;
+}
+.live{
+    margin-bottom: -150px;
+}
+
+
+.success-page {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f255;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .success-page h2 {
+    color: #000;
+    font-size: 20px;
+  }
+  
+  .success-page p {
+    font-size: 18px;
+  }
+  
+/* Add this CSS to your existing stylesheet or import it if using a separate CSS file */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(142, 55, 180);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 150px;
+}
+
+.faq-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Add more styles as needed to match your app's design */
+
+/* Add this CSS to your existing stylesheet or import it if using a separate CSS file */
+.quotes-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(142, 55, 180);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 300px;
+    margin-left: 400px;
+}
+
+.quotes-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.quote-button {
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quote-button:hover {
+    background-color: #0056b3;
+}
+
+/* Add more styles as needed to match your app's design */
