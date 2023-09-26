@@ -57,8 +57,8 @@ const Footer = () => {
             <p className='add'>Race course,</p>
             <p className='add'>Coimbatore-641018</p>
             <br/>
-            
-            <br/>
+            <p>For Queries & Suggestions:</p>
+            <Link to='/Feedback' className='foot-links-feed' >Feedback Form</Link>            
             </div>
         </div>
         <div className="footer-bottom">

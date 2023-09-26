@@ -1,5 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import Footer from '../components/Footer';
+
 
 const quotes = [
     "Yoga is the journey of the self, through the self, to the self. – The Bhagavad Gita",
@@ -23,11 +25,14 @@ function Challenges() {
             <Layout />
             <div className="quotes-container">
                 <h1>Motivational Quote on Yoga</h1>
+                <br/>
                 <div className="quote">
                     "{getRandomQuote()}"
                 </div>
+                <br/>
                 <button onClick={() => window.location.reload()} className="quote-button">Get Another Quote</button>
             </div>
+            <Footer/>
         </>
     );
 }

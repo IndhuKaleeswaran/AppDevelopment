@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sacramento&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Pacifico&family=Sacramento&family=Satisfy&display=swap');
  *{
     margin: 0px;
     padding: 0px;
@@ -23,7 +23,7 @@ body {
     padding-top: 180px;
     padding-right: 100px;
     font-family: 'Sacramento', cursive;
-    color: #fff;
+        color: #fff;
   text-shadow:
     0 0 7px #ddd,
     0 0 10px #fff,
@@ -185,28 +185,26 @@ body {
     flex-direction: column;
     gap: 0.4rem;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 5px;
 }
 
 .left-bar-button {
     border: none;
     background-color: lightskyblue;
     color: rgb(200, 3, 196);
-    border-left: 4px solid rgb(150, 54, 137);
-    border-right: 2px solid #fff;
-    margin-top: 10px;
+    border: 2px solid #fff;
+    margin-top: -5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
 }
 
 .left-bar-button-logout {
     border: none;
-    border-left: 4px solid #ff0000;
-    border-right: 2px solid #fff;
+    border: 2px solid red;
     background-color: #eae0e8;
     color: #ff0000;
     position: absolute;
-    bottom: 1rem;
+    bottom: 1px;
 }
 
 .nav-btn {
@@ -351,10 +349,10 @@ a{
 
 .bill-container {
     background-color: white;
-    border-radius: 3px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 400px;
+    width: 450px;
   }
   
   .billform {
@@ -378,9 +376,9 @@ a{
   
   select,.invoice {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
+    border: 2px solid #000;
     border-radius: 5px;
+    padding: 10px;
   }
 
 .abc
@@ -414,21 +412,7 @@ a{
     margin-left: 1px;
     
 }
-.button2
-{
-    position: absolute;
-    border-radius: 10px;
-    background: #0e0d0d;
-    width: 100px;
-    height: 42px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 39px;
-    color: #fefafa;
-    left: 100px;
-}
+
 
 .beginners {
     display: flex;
@@ -508,6 +492,8 @@ a{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    border-radius: 10px;
+
   }
   .eve2{
     position: absolute;
@@ -525,6 +511,8 @@ a{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    border-radius: 10px;
+
   }
   .eve3{
     position: absolute;
@@ -542,6 +530,14 @@ a{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    border-radius: 10px;
+
+  }
+
+  .live-btn{
+    border-radius: 5px;
+    padding: 5px;
+
   }
 
   .hello-container{
@@ -564,7 +560,7 @@ a{
     margin-right: 600px;
     padding-left: 50px;
     padding-top: 30px;
-    border: 5px solid lightskyblue;
+    border: 10px solid lightskyblue;
     border-radius: 5px;
     color: #000;
     text-align: center;
@@ -653,6 +649,7 @@ a{
     background-color: #000;
     color: #fff;
     padding: 20px;
+    border-radius: 10px;
 }
 .back-btn2{
     margin-top: -5px;
@@ -661,6 +658,8 @@ a{
     background-color: #000;
     color: #fff;
     padding: 20px;
+    border-radius: 10px;
+
 }
 .back-btn3{
     margin-top: -5px;
@@ -669,6 +668,8 @@ a{
     background-color: #000;
     color: #fff;
     padding: 20px;
+    border-radius: 10px;
+
 }
 
 
@@ -689,7 +690,7 @@ a{
     width: 80%;
     max-width: 600px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-top: 300px;
+    margin-top: 250px;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -697,13 +698,22 @@ a{
   .success-page h2 {
     color: #000;
     font-size: 20px;
+    margin-bottom: 40px;
   }
   
   .success-page p {
     font-size: 18px;
   }
+
+  .suc-btn{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+  }
   
-/* Add this CSS to your existing stylesheet or import it if using a separate CSS file */
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
@@ -733,9 +743,7 @@ a{
     line-height: 1.5;
 }
 
-/* Add more styles as needed to match your app's design */
 
-/* Add this CSS to your existing stylesheet or import it if using a separate CSS file */
 .quotes-container {
     max-width: 800px;
     margin: 0 auto;
@@ -744,13 +752,15 @@ a{
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 270px;
     margin-left: 400px;
+    margin-bottom: -500px;
 }
 
 .quotes-container h1 {
     font-size: 28px;
     margin-bottom: 20px;
+    color: lightskyblue;
 }
 
 .quote {
@@ -773,4 +783,59 @@ a{
     background-color: #0056b3;
 }
 
-/* Add more styles as needed to match your app's design */
+.feedback-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(142, 55, 180);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 280px;
+    margin-left: 400px;
+}
+
+.feedback-form-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: lightskyblue;
+}
+
+.feedback-submitted {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.feedback-form-container label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.feedback-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.feedback-form-container button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 45%;
+}
+
+.feedback-form-container button:hover {
+    background-color: #0056b3;
+}
+

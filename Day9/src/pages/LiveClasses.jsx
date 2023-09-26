@@ -22,7 +22,7 @@ function LiveClasses() {
                <p>Date: 10/11/2023</p>
                <p>Time: 10am to 12pm</p>
                <p>Price: Rs.499</p><br/>
-               <button onClick={paymentHandler}>Book Now</button>
+               <button onClick={paymentHandler} className='live-btn'>Book Now</button>
                </div>
             </div>
 
@@ -33,7 +33,7 @@ function LiveClasses() {
                <p>Date: 15/11/2023</p>
                <p>Time: 6pm to 8pm</p>
                <p>Price: Rs.499</p><br/>
-               <button onClick={paymentHandler}>Book Now</button>
+               <button onClick={paymentHandler} className='live-btn'>Book Now</button>
                </div>
             </div>
 
@@ -43,7 +43,7 @@ function LiveClasses() {
                <p>Date: 20/11/2023</p>
                <p>Time: 5am to 7am</p>
                <p>Price: Rs.499</p><br/>
-               <button onClick={paymentHandler}>Book Now</button>
+               <button onClick={paymentHandler} className='live-btn'>Book Now</button>
                </div>
             </div>
             </div>

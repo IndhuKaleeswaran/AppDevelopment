@@ -10,6 +10,8 @@ import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import HistoryToggleOffIcon from '@mui/icons-material/HistoryToggleOff';
 import LogoutIcon from '@mui/icons-material/Logout';
 
+import logo from '../assets/logo.jpg'
+
 function Leftbar() {
 
     const dispatch= useDispatch();
@@ -37,6 +39,7 @@ const logoutHandler = () =>{
     return (
         <>
             <div className='left-bar'>
+                <img src={logo} alt='logo' className='logo' height='160px'/>
                 <div className='left-bar-container'>
                 <button className='left-bar-button nav-btn' onClick={dashboardHandler}>
                         <InsightsIcon className='left-bar-icons'/>
@@ -45,6 +48,10 @@ const logoutHandler = () =>{
                     <button className='left-bar-button nav-btn' onClick={challengeHandler}>
                     <FormatQuoteIcon className='left-bar-icons'/>
                         Motivational Quotes
+                    </button>
+                    <button className='left-bar-button nav-btn' onClick={challengeHandler}>
+                    <SelfImprovementIcon className='left-bar-icons'/><br/>
+                        Yoga Postures
                     </button>
 
                     <button className='left-bar-button nav-btn' onClick={videosHandler}>

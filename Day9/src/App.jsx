@@ -13,8 +13,8 @@ import Payment from './pages/Payment'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Terms from './pages/Terms'
 import Success from './pages/Success'
-import Feedback from 'react-bootstrap/esm/Feedback'
 import Faq from './pages/Faq'
+import Feedback from './pages/Feedback'
 
 function App() {
   return (

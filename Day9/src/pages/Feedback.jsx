@@ -1,65 +1,46 @@
 import React, { useState } from 'react';
+import Layout from '../components/Layout';
+
 function Feedback() {
-  const containerStyle = {
-    backgroundSize: 'cover',
-    minHeight: '100vh',
-    minWidth: '100vw',
-  };
-  const [feedbackData, setFeedbackData] = useState({
-    feedback: '',
-    email: '',
-  });
+    const [feedback, setFeedback] = useState('');
+    const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFeedbackData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
+    const handleFeedbackChange = (e) => {
+        setFeedback(e.target.value);
+    };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setSubmitted(true);
+    };
 
-    console.log('Feedback Data:', feedbackData);
-
-    setFeedbackData({
-      feedback: '',
-      email: '',
-    });
-  };
-
-  return (
-    <div style={containerStyle}>
-    <div className='feed' >
-      <h2 className='feed1'>Feedback Form</h2>
-      </div>
-      <form  className='feed2' onSubmit={handleSubmit}>
-        <label htmlFor="feedback">Feedback:</label>
-        <textarea
-          id="feedback"
-          name="feedback"
-          value={feedbackData.feedback}
-          onChange={handleChange}
-          rows="4"
-          required
-        ></textarea>
-        <div className='feed3'>
-        <label htmlFor="email">Email (optional):</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={feedbackData.email}
-          onChange={handleChange}
-        />
-        </div>
-        <div >
-        <button className='feed4'>Submit</button>
-        </div>
-      </form>
-    </div>
-  );
+    return (
+        <>
+            <Layout />
+            <div className="feedback-form-container">
+                <h1>Feedback Form</h1>
+                {submitted ? (
+                    <div className="feedback-submitted">
+                        Thank you for your feedback!
+                    </div>
+                ) : (
+                    <form onSubmit={handleSubmit}>
+                        <label>
+                            Your Feedback:
+                            <textarea
+                                rows="4"
+                                cols="50"
+                                value={feedback}
+                                onChange={handleFeedbackChange}
+                                required
+                            />
+                        </label>
+                        <button type="submit">Submit</button>
+                    </form>
+                )}
+            </div>
+        </>
+    );
 }
 
 export default Feedback;

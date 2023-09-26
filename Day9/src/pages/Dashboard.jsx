@@ -3,7 +3,6 @@ import Layout from '../components/Layout'
 import { BarChart } from '@mui/x-charts/BarChart';
 import { useSelector } from 'react-redux'
 import { selectUser } from '../redux/userSlice'
-import { BarPlot } from '@mui/x-charts/BarChart';
 import Footer from '../components/Footer';
 
 
